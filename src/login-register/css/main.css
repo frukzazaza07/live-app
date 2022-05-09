@@ -1,0 +1,27 @@
+.login-wrapper {
+    padding: 3rem 5rem;
+    background-color: #fff;
+}
+
+.remember-forgot-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.remember-forgot-wrapper a {
+    color: black;
+}
+
+.problem-wrapper {
+    font-weight: bold;
+}
+
+.button-login button {
+    width: 50%;
+    border-radius: 50px;
+}
+
+.list-group li {
+    list-style: none;
+}

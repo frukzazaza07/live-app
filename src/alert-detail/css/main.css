@@ -1,0 +1,18 @@
+/* #focus-example>.extra {
+    display: none;
+}
+
+#focus-example:focus>.extra {
+    display: block;
+} */
+
+.alert-card {
+    color: black;
+    text-decoration: none;
+    z-index: 999;
+}
+
+.alert-card:hover {
+    color: black;
+    text-decoration: none;
+}

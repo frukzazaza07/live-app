@@ -1,0 +1,182 @@
+.feed-page {
+    background-color: white;
+}
+
+.feed-card {
+    /* padding-bottom: 2rem; */
+}
+
+.feed-card:not(:first-child) {
+    margin-top: 2rem;
+}
+
+.feed-card-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-img img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #d4d4d4;
+}
+
+.profile-id,
+.profile-name {
+    font-weight: 500;
+}
+
+.profile-id span:last-child,
+.profile-name span:last-child {
+    font-weight: 200;
+}
+
+.profile-id-text {
+    color: #202020;
+    border: 1px solid #cccccc;
+    max-height: 16px;
+    line-height: 0.9;
+    padding: 0px 1px;
+    font-size: 13px;
+    border-radius: 2px;
+    font-weight: 500;
+    margin-right: 3px;
+    width: 14px;
+    max-width: 14px;
+    text-align: center;
+    box-shadow: 1px 1px 0px rgb(0 0 0 / 20%);
+}
+
+.feed-card-body div:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feed-card-body div:last-child img {
+    object-fit: cover;
+}
+
+.feed-card-body div:first-child {
+    padding: 0rem 2rem 1rem 2rem;
+}
+
+.feed-card-body div {
+    width: calc(100% + 30px);
+    /* max-width: 500px; */
+}
+
+.feed-card-body img {
+    width: 100%;
+}
+
+.profile-detail-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem 2rem;
+}
+
+.detail-left {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 7px;
+}
+
+.detail-right {
+    text-align: right;
+}
+
+.detail-right div svg,
+.detail-left div svg {
+    width: 45px;
+    height: 45px;
+}
+
+.like-animation {
+    animation: likeRotate 5s infinite;
+}
+
+.icon-click {
+    display: inline-block;
+    cursor: pointer;
+}
+
+@keyframes likeRotate {
+
+    10% {
+        transform: translateX(-10px) rotate(-20deg) translateY(-10px);
+    }
+
+    20% {
+        transform: translateX(0px) rotate(0deg) translateY(0px);
+    }
+}
+
+.icon-lock-heart {
+    position: relative;
+    max-width: 45px;
+}
+
+.icon-lock-heart div:last-child {
+    position: absolute;
+    margin: 0 auto;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%, -50%);
+}
+
+.icon-lock-heart div:last-child svg {
+    width: 15px;
+    height: 15px;
+    color: red;
+    font-weight: 700;
+    animation: heartScale 5s infinite;
+}
+
+@keyframes heartScale {
+    0% {
+        transform: scale(1);
+    }
+
+    10% {
+        transform: scale(3);
+        -webkit-filter: drop-shadow(1px 2px 5px red);
+        /* -webkit-filter: drop-shadow(5px 5px 10px red); */
+        filter: drop-shadow(1px 2px 5px red);
+    }
+
+    15% {
+        transform: scale(1);
+        -webkit-filter: drop-shadow(0px 0px 0px #fff);
+        filter: drop-shadow(0px 0px 0px #fff);
+    }
+}
+
+.profile-detail-body,
+.profile-detail-footter {
+    padding: 0px 2rem;
+}
+
+.profile-detail-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gap-1 {
+    gap: 1rem;
+}
+
+.profile-detail-footter .detail-wrapper span:first-child {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.comment-wrapper,
+.vote-gift-wrapper {
+    color: var(--theme-sub-color);
+}
+
+.infinite-scroll-component {
+    overflow: hidden !important;
+}

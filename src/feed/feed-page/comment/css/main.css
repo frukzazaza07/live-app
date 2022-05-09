@@ -1,0 +1,34 @@
+.comment-container:not(:first-child) {
+    margin-top: 1.5rem;
+}
+
+.comment-header {
+    border-bottom: 1px solid #d4d4d4;
+}
+
+.comment-profile {
+    align-items: center;
+    display: flex;
+}
+
+.comment-profile .profile-fullname span:first-child {
+    font-weight: bold;
+}
+
+.card-header-right {
+    padding-top: 1rem;
+}
+
+.comment-body-profile .profile-id span:first-child {
+    font-size: var(--font-13-px);
+    font-weight: 400;
+    color: var(--theme-sub-color);
+}
+
+.like-active svg {
+    color: red;
+}
+
+.comment-icon svg {
+    cursor: pointer;
+}

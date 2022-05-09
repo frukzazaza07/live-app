@@ -1,0 +1,39 @@
+.sticker-slide-header {
+    display: flex;
+    gap: 10px;
+    overflow-x: scroll;
+
+}
+
+.sticker-package img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #d4d4d4;
+    object-fit: cover;
+}
+
+.sticker-slide-body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.sticker-package-info {
+    text-align: center;
+    max-width: 160px;
+    height: auto;
+    padding: .5rem;
+    border-radius: 10px;
+    border: 1px solid #d4d4d4;
+}
+
+.sticker-package-info img {
+    width: 120px;
+    height: auto;
+    object-fit: cover;
+}
+
+.sticker-package-info-price p {
+    margin-bottom: .3rem;
+}

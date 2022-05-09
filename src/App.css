@@ -32,7 +32,41 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+:root {
+  --bg-color: #fbd4f7;
+  --theme-color: #202020;
+  --theme-sub-color: #9c9c9c;
+  --font-12-px: 12px;
+  --font-13-px: 13px;
+}
+
+.bg-main {
+  background-color: var(--bg-color);
+}
+
+.cursor-p {
+  cursor: pointer;
+}
+
+.form-100 {
+  width: 100%;
+}
+
+.sticker-active {
+  background: #ffedbf;
+  border: 1px solid #ffedbf;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.font-color-main {
+  color: var(--theme-sub-color);
 }
